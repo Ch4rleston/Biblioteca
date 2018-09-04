@@ -1,0 +1,336 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>E-Library</title>
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <link href="../images/icon.png" rel="shortcut icon" type="icon">
+</head>
+<body>
+
+  <!-- COMEÇO DA NAV BAR -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img alt="E-Library" src="../images/logo.png">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Inicio</a></li>
+
+
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastro <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="cadastroAut.html">Autor</a></li>
+              <li><a href="cadastroLiv.html">Livro</a></li>
+              <li><a href="cadastroUsu.html">Usuário</a></li>
+              <li><a href="cadastroCat.html">Categoria</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="retira.html">Retirada</a></li>
+              <li><a href="devolve.html">Devolução</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listagem <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="listAutores.html">Autores</a></li>
+              <li><a href="listLivros.html">Livros</a></li>
+              <li><a href="listUsuarios.html">Usuários</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="listDevolve.html">Livros a devolver</a></li>
+              <li><a href="listEmprestado.html">Livros emprestados</a></li>
+              <li><a href="listDisponiveis.html">Livros Disponíveis</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        </div>
+    </div>
+  </nav>
+  <!-- FIM DA NAV BAR -->
+  <!-- COMEÇO DO CAROUSEL -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../images/20.jpg" alt="one">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/19.jpg" alt="two">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../images/18.jpg" alt="three">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../images/17.jpg" alt="four">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../images/16.jpg" alt="five">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+  <!-- FIM DO CAROUSEL -->
+
+
+<hr class="style">
+<div class="conteudo">
+  <form class="form-horizontal center">
+<fieldset>
+
+<h3>Cadastro de Livros</h3>
+
+<div class="">
+  <label class="control-label" for="isbnLiv">ISBN</label>
+  <div class="controls">
+    <input id="isbnLiv" name="isbnLiv" type="text" placeholder="digite o isbn" class="large" required="">
+
+  </div>
+</div>
+
+<div >
+  <label class="control-label" id="tituloLiv">Titulo</label>
+  <div class="controls">
+    <input id="tituloLiv" name="tituloLiv" type="text" placeholder="digite o titulo do livro" class="input-large" required="">
+
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="anoLiv">Ano</label>
+  <div class="controls">
+    <select id="anoLiv" name="anoLiv" class="input-small">
+      <option>dddd</option>
+      <option>1900</option>
+      <option>1901</option>
+      <option>1902</option>
+      <option>1903</option>
+      <option>1904</option>
+      <option>1905</option>
+      <option>1906</option>
+      <option>1907</option>
+      <option>1908</option>
+      <option>1909</option>
+      <option>1910</option>
+      <option>1911</option>
+      <option>1912</option>
+      <option>1913</option>
+      <option>1914</option>
+      <option>1915</option>
+      <option>1916</option>
+      <option>1917</option>
+      <option>1918</option>
+      <option>1919</option>
+      <option>1920</option>
+      <option>1921</option>
+      <option>1922</option>
+      <option>1923</option>
+      <option>1924</option>
+      <option>1925</option>
+      <option>1926</option>
+      <option>1927</option>
+      <option>1928</option>
+      <option>1929</option>
+      <option>1930</option>
+      <option>1931</option>
+      <option>1932</option>
+      <option>1933</option>
+      <option>1934</option>
+      <option>1935</option>
+      <option>1936</option>
+      <option>1937</option>
+      <option>1938</option>
+      <option>1939</option>
+      <option>1940</option>
+      <option>1941</option>
+      <option>1942</option>
+      <option>1943</option>
+      <option>1944</option>
+      <option>1945</option>
+      <option>1946</option>
+      <option>1947</option>
+      <option>1948</option>
+      <option>1949</option>
+      <option>1950</option>
+      <option>1951</option>
+      <option>1952</option>
+      <option>1953</option>
+      <option>1954</option>
+      <option>1955</option>
+      <option>1956</option>
+      <option>1957</option>
+      <option>1958</option>
+      <option>1959</option>
+      <option>1960</option>
+      <option>1961</option>
+      <option>1962</option>
+      <option>1963</option>
+      <option>1964</option>
+      <option>1965</option>
+      <option>1966</option>
+      <option>1967</option>
+      <option>1968</option>
+      <option>1969</option>
+      <option>1970</option>
+      <option>1971</option>
+      <option>1972</option>
+      <option>1973</option>
+      <option>1974</option>
+      <option>1975</option>
+      <option>1976</option>
+      <option>1977</option>
+      <option>1978</option>
+      <option>1979</option>
+      <option>1980</option>
+      <option>1981</option>
+      <option>1982</option>
+      <option>1983</option>
+      <option>1984</option>
+      <option>1985</option>
+      <option>1986</option>
+      <option>1987</option>
+      <option>1988</option>
+      <option>1989</option>
+      <option>1990</option>
+      <option>1991</option>
+      <option>1992</option>
+      <option>1993</option>
+      <option>1994</option>
+      <option>1995</option>
+      <option>1996</option>
+      <option>1997</option>
+      <option>1998</option>
+      <option>1999</option>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+      <option>2003</option>
+      <option>2004</option>
+      <option>2005</option>
+      <option>2006</option>
+      <option>2007</option>
+      <option>2008</option>
+      <option>2009</option>
+      <option>2010</option>
+      <option>2011</option>
+      <option>2012</option>
+      <option>2013</option>
+      <option>2014</option>
+      <option>2015</option>
+      <option>2016</option>
+    </select>
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="editoraLiv">Editora</label>
+  <div class="controls">
+    <input id="editoraLiv" name="editoraLiv" type="text" placeholder="digite o nome da editora" class="input-large">
+
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="categoriaLiv">Categoria</label>
+  <div class="controls">
+    <select id="categoriaLiv" name="categoriaLiv" class="input-large" multiple="multiple">
+      <option>Auto-Ajuda</option>
+      <option>Ciência</option>
+      <option>Culinária | Gastronomia</option>
+      <option>Esoterismo</option>
+      <option>Fantasia | Ficção</option>
+      <option>Filosofia</option>
+      <option>Guerra</option>
+      <option>História</option>
+      <option>Lingüistica</option>
+      <option>Lit. Estrangeira</option>
+      <option>Lit. Infanto-Juvenil</option>
+      <option>Lit. Nacional</option>
+      <option>Medicina</option>
+      <option>Música</option>
+      <option>Política</option>
+      <option>Psicologia</option>
+      <option>Romance</option>
+      <option>Quadrinhos</option>
+      <option>Religião</option>
+      <option>Saúde</option>
+      <option>Sexo</option>
+      <option>Terror</option>
+      <option>Vestibular</option>
+      <option>Cronica</option>
+      <option>Poesia</option>
+      <option>Poemas</option>
+      <option>Conto</option>
+    </select>
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="autorLiv">Autor (es)</label>
+  <div class="controls">
+    <input id="autorLiv" name="autorLiv" type="text" placeholder="se necessário, separados por ;" class="input-large">
+
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="enviarLiv"></label>
+  <div class="controls">
+    <a href="../index.html"><button id="enviarLiv" name="enviarLiv" class="btn btn-success">Enviar</button></a>
+    <a href="../index.html"><button id="cancelarLiv" name="cancelarLiv" class="btn btn-danger">Cancelar</button></a>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
